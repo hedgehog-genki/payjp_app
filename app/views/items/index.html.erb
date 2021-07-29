@@ -4,6 +4,6 @@
     <%# eachメソッドを使うことで、全商品に対して以下の処理を実行します %>
     <p>商品名：<%= item.name %></p>
     <p>値段：<%= item.price %>円</p>
-    <%= link_to '購入する'%>
+    <%= link_to '購入する', order_item_path(item.id), method: :post %>
   <% end %>
 </div>
