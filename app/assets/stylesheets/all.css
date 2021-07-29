@@ -1,0 +1,57 @@
+.AccountPage__title{
+  margin-bottom: 30px;
+}
+
+.content{
+  margin-top: 60px;
+}
+
+.sold-out{
+  margin-bottom: 60px;
+}
+
+.order{
+  margin-bottom: 60px;
+}
+
+/* a{
+  display: block;
+  margin-bottom: 60px;
+} */
+
+.Card_info{
+  margin-bottom: 60px;
+}
+
+.card-form{
+  width: 500px;
+ }
+ 
+.form-wrap{
+  display: flex;
+  flex-direction: column;
+ }
+ 
+.exp_month{
+  resize:none;
+}
+ 
+ .exp_year{
+  resize:none;
+ }
+ 
+.update{
+  margin-bottom: 40px;
+}
+
+.input-expiration-date-wrap{
+  display: flex;
+}
+ 
+ 
+ .button{
+  margin-top: 30px;
+  height: 30px;
+  width: 100px;
+ }
+
