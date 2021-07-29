@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'cards/new'
   get "users/show"
   get "items/index"
   devise_for :users
