@@ -1,0 +1,31 @@
+<div class="AccountPage">
+  <div class="AccountPage__title">
+    <h1>ログインページ</h1>
+    <%= render "devise/shared/links" %>
+  </div><br>
+  <div class="AccountPage__form">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="FormField">
+        <div class="FormField__label--normal">
+          <%= f.label :email %>
+        </div>
+        <div class="FormField__input--normal">
+          <%= f.email_field :email, autofocus: true %>
+        </div>
+        <div class="FormField">
+          <div class="FormField__label--normal">
+            <%= f.label :password %>
+            （英数字で6文字以上）
+          </div>
+          <div class="FormField__input--normal">
+            <%= f.password_field :password, autocomplete: "off" %>
+          </div>
+        </div><br>
+        <div class="actions">
+          <%= f.submit "ログイン", class: 'Button UserButton' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
